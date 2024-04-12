@@ -1,5 +1,4 @@
 import { Category } from "@/types"
-import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { motion } from 'framer-motion';
@@ -65,12 +64,12 @@ const CategoryListItem = ({ category, setItemDeleted }: {
                             >
                                 <div className="flex justify-end gap-10 items-center ">
                                     <Link href={item.url}>
-                                        <Image src='/url-icon.png' width={20} height={20} alt="url icon" />
+                                        <img src='/url-icon.png' width={20} height={20} alt="url icon" />
                                     </Link>
                                     <AlertDialog>
                                         <AlertDialogTrigger asChild>
                                             <Button variant="outline">
-                                                <Image src='/trash.svg' width={20} height={20} alt="url icon" /></Button>
+                                                <img src='/trash.svg' width={20} height={20} alt="url icon" /></Button>
                                         </AlertDialogTrigger>
                                         <AlertDialogContent>
                                             <AlertDialogHeader>

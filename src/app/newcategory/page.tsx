@@ -11,7 +11,6 @@ import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import { KindeUser } from "@kinde-oss/kinde-auth-nextjs/dist/types";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
-import Image from "next/image";
 import SkeletonNewCategory from "./_componentes/SkeletonNewCategory";
 
 
@@ -123,7 +122,7 @@ const AddNewCategory = () => {
                     >
                         <span className="flex justify-center gap-2">
                             {loading ? (
-                                <Image src='/loader.svg' width={20} height={20} alt="loader" className=" animate-spin pointer-events-none" />
+                                <img src='/loader.svg' width={20} height={20} alt="loader" className=" animate-spin pointer-events-none" />
                             ) : (
                                 <span>Create</span>
                             )}

@@ -1,18 +1,16 @@
 "use client"
 
 import { LoginLink } from '@kinde-oss/kinde-auth-nextjs'
-import Image from 'next/image'
 
 const LoginScreen = () => {
     return (
         <div className='flex flex-col items-center min-h-screen max-h-screen '>
             <div className='border-4 mt-6 rounded-xl overflow-hidden w-[200px] md:w-[300px]'>
-                <Image
+                <img
                     src="/login_image.jpg"
                     width={200}
                     height={400}
                     alt='login image'
-                    priority
                     className='md:w-[300px] md:h-[500px]' />
             </div>
             <div className='bg-primary w-full h-screen mt-[-20px] rounded-t-3xl px-6 text-center max-w-5xl flex flex-col justify-center items-center'>

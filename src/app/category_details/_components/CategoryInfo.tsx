@@ -1,5 +1,4 @@
 import { Category } from "@/types"
-import Image from "next/image"
 import {
   AlertDialog,
   AlertDialogAction,
@@ -48,7 +47,7 @@ const CategoryInfo = ({ category }: { category: Category | null }) => {
         <AlertDialog>
           <AlertDialogTrigger asChild>
             <Button variant="outline">
-              <Image src='/trash.svg' width={25} height={25} alt="trashcan" />
+              <img src='/trash.svg' width={25} height={25} alt="trashcan" />
             </Button>
           </AlertDialogTrigger>
           <AlertDialogContent>

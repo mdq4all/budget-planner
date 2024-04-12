@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { useEffect, useState } from "react"
 import TagIcon from "../../../../public/tagIcon"
 import MoneyBagIcon from "../../../../public/moneyBagIcon"
@@ -115,9 +114,9 @@ const AddNewItem = ({ params }: {
         <div>
           <label htmlFor="image">
             {image ? (
-              <Image src={URL.createObjectURL(image)} width={80} height={80} alt="image" className="my-2 rounded-md" />
+              <img src={URL.createObjectURL(image)} width={80} height={80} alt="image" className="my-2 rounded-md" />
             ) : (
-              <Image src={placeholder} width={80} height={80} alt="image" className="my-2 rounded-md" />
+              <img src={placeholder} width={80} height={80} alt="image" className="my-2 rounded-md" />
             )}
           </label>
           <input
@@ -152,7 +151,7 @@ const AddNewItem = ({ params }: {
         </div>
 
         <div className="flex mb-4 focus-within:border focus-within:border-primary rounded-md">
-          <label htmlFor="url" className="bg-[#FFF] p-1 rounded-l-lg"><Image src="/url-icon.png" width={24} height={24} alt="url icon" /></label>
+          <label htmlFor="url" className="bg-[#FFF] p-1 rounded-l-lg"><img src="/url-icon.png" width={24} height={24} alt="url icon" /></label>
           <input
             type="text"
             name="url"
@@ -162,7 +161,7 @@ const AddNewItem = ({ params }: {
         </div>
 
         <div className="flex mb-4 focus-within:border focus-within:border-primary rounded-md">
-          <label htmlFor="note" className="bg-[#FFF] p-1 rounded-l-lg"><Image src="/notes.png" width={24} height={24} alt="url icon" /></label>
+          <label htmlFor="note" className="bg-[#FFF] p-1 rounded-l-lg"><img src="/notes.png" width={24} height={24} alt="url icon" /></label>
           <textarea
             name="note"
             id="note"
@@ -178,7 +177,7 @@ const AddNewItem = ({ params }: {
             disabled={!dataForm.name || !dataForm.cost}>
             <span className="flex justify-center gap-2">
               {loading ? (
-                <Image src='/loader.svg' width={20} height={20} alt="loader" className=" animate-spin pointer-events-none" />
+                <img src='/loader.svg' width={20} height={20} alt="loader" className=" animate-spin pointer-events-none" />
               ) : (
                 <span>Add</span>
               )}
